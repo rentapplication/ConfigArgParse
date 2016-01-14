@@ -656,7 +656,7 @@ class ConfigFileParser(object):
                 continue
             white_space = "\\s*"
             key = "(?P<key>[^:=;#\s]+?)"
-            value1 = white_space+"[:=]"+white_space+"(?P<value>[^;#]+?)"
+            value1 = white_space+"[:=]"+white_space+"(?P<value>[^;]+?)"
             value2 = white_space+"[\s]"+white_space+"(?P<value>[^;#\s]+?)"
             comment = white_space+"(?P<comment>\\s[;#].*)?"
 
